@@ -21,6 +21,6 @@ RUN python manage.py collectstatic --noinput
 # Expose port
 EXPOSE 8000
 
-# Start server
-CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]
+# Start the Django development server when the container starts
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
  
