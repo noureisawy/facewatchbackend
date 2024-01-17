@@ -9,11 +9,54 @@ The backend server flow
 
 To get started with the backend project, follow the installation and setup instructions below.
 
-Installation and Setup:
-1. Clone the repository to your local machine.
-2. Install the required dependencies using the package manager of your choice (e.g., pip, conda).
-3. Set up a virtual environment for the project to manage dependencies.
-4. Run the backend server using the provided scripts or commands.
+## Installation
 
-Contributing:
-If you would like to contribute to the backend project, please follow the guidelines outlined in the CONTRIBUTING.md file in the repository.
+Follow these steps to set up the backend project:
+
+1. **Clone the Repository:**
+2. **Create Virtual Environment:**
+
+   ```bash
+   python -m venv venv
+   ```
+
+3. **Activate Virtual Environment:**
+
+   On Windows:
+
+   ```bash
+   venv\Scripts\activate
+   ```
+
+   On macOS/Linux:
+
+   ```bash
+   source venv/bin/activate
+   ```
+
+4. **Install Dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Set Up Database:**
+
+   ```bash
+   python manage.py migrate
+   ```
+
+6. **Create Superuser (Optional):**
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+7. **Run the Development Server:**
+
+   ```bash
+   python manage.py runserver
+   ```
+
+   Access the Django admin interface at http://localhost:8000/admin/ and the main application at http://localhost:8000/.
+
