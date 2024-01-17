@@ -3,7 +3,9 @@ This repository contains the backend code for the Facewatch project, which is a 
 
 To ensure efficient model updates, the version control "git" is used to track changes in the model weights. This allows the user to download only the changes, rather than the entire model, which can be time-consuming and resource-intensive.
 
-The backend server flow is illustrated in the "Backend Server Flow" diagram in the repository.
+The backend server flow
+![image](https://github.com/abdelrahmanfekri/facewatchbackend/assets/84510558/5be74791-5137-4a5d-b5f5-27e369ff82cb)
+
 
 To get started with the backend project, follow the installation and setup instructions below.
 
