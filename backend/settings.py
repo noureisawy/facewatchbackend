@@ -26,7 +26,8 @@ SECRET_KEY = "django-insecure-(y*!$d0mm(72llfsm68)#wpb)j2yy3y6dsze8z)-#gujyl*!_h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*","shark-app-xn7wm.ondigitalocean.app"]
+ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ["https://hammerhead-app-pxhlz.ondigitalocean.app"]
 
 CSRF_COOKIE_SECURE = False
 CSRF_COOKIE_HTTPONLY = False
